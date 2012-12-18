@@ -1,0 +1,22 @@
+author: MDCollins
+database: false
+description: Gives name/id numbers of the item in your hand, looking at or using the
+  tool.
+generator: http://dinnerbone.com/minecraft/tools/pluginator/
+main: com.blockmovers.plugins.iteminfo.ItemInfo
+name: ItemInfo
+startup: postworld
+url: http://blockmovers.com/
+version: '0.1'
+commands:
+  iteminfo:
+    usage: /<command> (tool)
+    aliases: ii
+    description: The InfoItem root command.
+permissions:
+  iteminfo.hand:
+    default: false
+    description: Allows the command for the item in hand
+  iteminfo.tool:
+    default: false
+    description: Allows the use of the tool
